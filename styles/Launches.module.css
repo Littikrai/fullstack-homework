@@ -1,0 +1,249 @@
+.boxCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;   
+  }
+
+.box{
+  /* background-image: url("/free-space.jpg"); */
+  cursor: pointer;
+  background-color: rgb(118, 131, 131, 0.6);
+  box-shadow: 13px 15px 25px  rgb(0, 0, 0);
+  border-radius: 10%;
+  width: 220px;
+  height: 230px;
+  padding: 8%;
+  margin-top: 20px;
+  z-index: 0;
+  transform-style: preserve-3d;  
+}
+.box:hover{
+  box-shadow: 13px 15px 20px rgba(255, 255, 255, 0.7);
+}
+
+.hid{
+  display: none;
+}
+
+.hText{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  font-size: 1.3rem;
+}
+
+.text{
+  margin: 0;
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.butLm{
+  font-size: 1rem;
+  position:absolute;
+  bottom: 10%;
+  cursor: pointer;
+  border-radius: 5px;
+	border: 0;
+  padding: 2% 6%;
+	box-shadow: 0 10px 10px rgba(0, 0, 0);
+  background-color: #fff;
+}
+
+
+.butLm:hover{
+  background-color: rgb(35 35 35);
+  color: #fff;
+}
+
+.cardBack{
+  z-index: 1;
+  color:white;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0);
+  border-radius: 4px;
+  justify-content: space-around;
+}
+
+.wrapper .inputData
+{
+  height: 40px;
+  width: 320px;
+  position: relative;
+  
+}
+
+.wrapper .inputData .inputBox
+{
+  height: 100%;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: rgb(26, 26, 26);
+  font-size: 17px;
+  border-bottom: 2px solid #ff0;
+}
+
+.drop{
+  color: #fff;
+  width: 150px;
+  background: rgb(26, 26, 26);
+  font-size: 17px;
+  border: 2px solid rgb(26, 26, 26);
+  border-bottom: 2px solid #ff0;
+}
+.load{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.load:after {
+  content: " ";
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 20px 0;
+  border-radius: 50%;
+  border: 6px solid #ff0;
+  border-color: #ff0 transparent #ff0 transparent;
+  animation: load 1.2s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.boxLoad{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media(max-width: 1335px){
+  .box{
+    width: 260px;
+    height: 280px;
+  }
+}
+ 
+
+@media(max-width: 1155px){
+  .box{
+    width: 230px;
+    height: 250px;
+  }
+}
+
+@media(max-width: 1025px){
+  .box{
+    width: 200px;
+    height: 220px;
+  }
+  .hText{
+    font-size: 1.2rem;
+  }
+  .text{
+    font-size: 0.8rem;
+  }
+  .butLm{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 925px){
+  .box{
+    width: 180px;
+    height: 200px;
+  }
+  .hText{
+    font-size: 1rem;
+  }
+  .text{
+    font-size: 0.7rem;
+  }
+  .butLm{
+    font-size: 0.7rem;
+  }
+}
+
+@media(max-width: 825px){
+  .box{
+    width: 160px;
+    height: 180px;
+  }
+}
+
+
+@media(max-width: 745px){
+  .box{
+    width: 150px;
+    height: 160px;
+    margin: 0.5rem 0.5rem;
+  }
+  .hText{
+    font-size: 0.9rem;
+  }
+  .text{
+    font-size: 0.65rem;
+  }
+  .butLm{
+    font-size: 0.7rem;
+  }
+}
+
+@media(max-width: 575px){
+  .box{
+    width: 38vw;
+    height: 40vw;
+    padding: 3vw;
+  }
+  .boxCard{
+    margin: 0 0.9rem;
+  }
+  .hText{
+    font-size: 4vw;
+  }
+  .text{
+    font-size: 2.5vw;
+  }
+  .butLm{
+    font-size: 2.5vw;
+  }
+  .wrapper{
+    padding: 5vw;
+  }
+}
+
+@media(max-width: 475px){
+.wrapper .inputData .inputBox{
+  font-size: 4vw;
+}
+.drop{
+  font-size: 4vw;
+}
+}

@@ -1,0 +1,167 @@
+.head{
+    margin: 1rem 0;
+}
+.title{
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    color: #fff;
+}
+
+.line{
+    width: 100%;
+    height: 0.5vw;
+    background-color: #ff0;
+}
+
+.boxText{
+    color: white;
+}
+
+.subText{
+    font-weight: 100;
+}
+
+.failTask{
+    padding: 0.5rem;
+    border: 1px solid #FF0000;
+}
+
+.boxVideo{
+    display: flex;
+    justify-content: center;
+}
+
+.video{    
+    width: 700px;
+    height: 450px;
+}
+
+.img{
+  width: 260px;
+  height: 270px;
+  position: relative;
+}
+.boxImg{
+    display: flex;
+    justify-content: center;
+}
+
+.arrowLeft{
+    position: absolute;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: solid #fff;
+    border-width: 0 11px 11px 0;
+    display: inline-block;
+    padding: 12px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrowLeft:hover{
+    position: absolute;
+    cursor: pointer;
+    border: solid #ff0;
+    border-width: 0 11px 11px 0;
+    display: inline-block;
+    padding: 13px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.goRocket{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 250px;
+    padding: 0.5rem;
+    background-color: #ff0;
+    text-align: center;
+    color: #fff;
+}
+
+.goRocket:hover{
+    background-color: #fff;
+    color: #ff0;
+}
+
+.textBtn{
+    text-shadow:  0.15rem 0.15rem rgba(0, 0, 0, 0.6);
+}
+
+.boxImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imgSty{
+    position: relative;
+    height: 20vw;
+    width: 32vw;
+    margin: 1vw 0;
+}
+
+.rockHead{
+    text-align: center;
+    color: #ff0;
+    font-size:4.5rem;
+    text-shadow:  0.5rem 0.5rem 0.3rem rgba(0, 0, 0);
+    letter-spacing: 0.75rem;
+    margin: 2.5rem 4rem;
+}
+
+@media(max-width:925px){
+    .goRocket{
+        width: 230px;
+        padding: 0.4rem;
+    }
+    .video{    
+        width: 600px;
+        height: 350px;
+    }
+    
+    .title{
+        font-size: 2rem;
+    }
+
+    .rockHead{
+        font-size:3rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media(max-width:625px){
+    .rockHead{
+        font-size:10vw;
+        letter-spacing: 0.5rem;
+        margin: 2.5rem 3.5rem;
+    }
+    .img{
+        width: 56vw;
+        height: 56vw;
+        position: relative;
+      }
+    .goRocket{
+        width: 40vw;
+        padding: 0.3rem;
+    }
+    .video{    
+        width: 500px;
+        height: 280px;
+    }
+    .title{
+        font-size: 6vw;
+    }
+    .arrowLeft{
+        margin-left: 4vw;
+        border-width: 0 1.5vw 1.5vw 0;
+        padding: 2vw;
+    }
+    .arrowLeft:hover{
+        margin-left: 4vw;
+        border-width: 0 1.5vw 1.5vw 0;
+        padding: 2vw;
+    }
+}

@@ -1,0 +1,142 @@
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 0 15vw;
+}
+
+.image {
+  border-radius: 5%;
+  text-align: center;
+}
+
+.lineH{
+  width: 100%;
+  height: 0.3vw;
+  background-color: #fff;
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.frame_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40vw;
+}
+.boxLogo {
+  justify-content: center;
+  display: flex;
+  margin-top: 2vw;
+}
+.fill {
+  fill: #fff;
+} 
+
+.menu{
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #232323;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  color: #FF0;
+  font-size: 1.5rem;
+  font-family: verdana;
+  letter-spacing: 0.2rem;
+}
+
+
+.activeMenu{
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #ff0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  color: #232323;
+  font-size: 1.5rem;
+  font-family: verdana;
+  letter-spacing: 0.2rem;
+}
+
+.menu:hover {
+  cursor: pointer;
+  border: 2px solid #FF0;
+  transition: all 0.3s ease;
+}
+
+
+.nav{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media(max-width: 875px){
+  .logo{
+    width: 50vw;
+  }
+  .menu{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .activeMenu{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media(max-width: 765px){
+  .container{
+    padding: 0 3vw;
+  }
+  .logo{
+    width: 60vw;
+  }
+  .nav{
+    padding: 1rem 0;
+  }
+}
+
+@media(max-width: 400px){
+  .menu{
+    /* font-size: 4vw; */
+    width: 35vw;
+    max-height: 15vw;
+  }
+  .activeMenu{
+    /* font-size: 4vw; */
+    width: 35vw;
+    max-height: 15vw;
+  }
+}
+
+.Timg {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
